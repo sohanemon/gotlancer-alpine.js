@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                green: "#67993F",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <br />
+    <section
+      class="max-w-[58rem] text-zinc-700 container mx-auto bg-white shadow border border-zinc-300"
+    >
+      <main class="py-9 px-8">
+        <!-- alert -->
+        <div class="py-3 flex items-center gap-2.5 bg-yellow-100 rounded px-5">
+          <img src="/assets/crown.svg" />
+          <p class="font-medium">
+            <span class="text-yellow-600"
+              >Upgrade your membership to add up to 5 sub category and up to 70
+              skills. </span
+            ><span class="text-lime-600">Upgrade Now</span>
+          </p>
+        </div>
+        <!-- selection -->
+        <section class="py-6 grid grid-cols-1 md:grid-cols-2">
+          <!-- radio selection -->
+          <aside>
+            <div class="mb-3">
+              <span class="font-bold">Select your category </span
+              ><span class="font-normal gap-1 items-center inline-flex"
+                >(0/1) <img src="/assets/info.svg"
+              /></span>
+              <p>Choose your primary expertise category.</p>
+            </div>
+
+            <div class="flex items-center mb-4">
+              <input
+                id="developers"
+                name="role"
+                type="radio"
+                value="developers"
+                class="w-4 h-4 -mt-3.5 accent-brand-green hover:brand-green/80 bg-gray-100 border-gray-300"
+              />
+              <label for="developers" class="ms-2">
+                <p class="font-medium">Developers</p>
+                <p class="text-xs">
+                  Software Developers, Data Scientists, DevOps, and QA
+                </p>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input
+                id="designers"
+                name="role"
+                type="radio"
+                value="designers"
+                class="w-4 h-4 -mt-3.5 accent-brand-green hover:brand-green/80 bg-gray-100 border-gray-300"
+              />
+              <label for="designers" class="ms-2">
+                <p class="font-medium">Designers</p>
+                <p class="text-xs">
+                  Web, Mobile, UI/UX, Branding, and Visual Designers
+                </p>
+              </label>
+            </div>
+          </aside>
+          <!-- checkbox selection -->
+          <aside>
+            <div class="mb-3">
+              <span class="font-bold">Select your sub-category </span
+              ><span class="font-normal gap-1 items-center inline-flex"
+                >(0/3) <img src="/assets/info.svg"
+              /></span>
+              <p>Choose your primary expertise category.</p>
+            </div>
+
+            <div class="flex items-center mb-4">
+              <input
+                id="artist"
+                type="checkbox"
+                value="artist"
+                class="w-4 h-4 -mt-3.5 accent-brand-green hover:brand-green/80 bg-gray-100 border-gray-300"
+              />
+              <label for="artist" class="ms-2">
+                <p class="font-medium">Painting Artist</p>
+                <p class="text-xs">
+                  Acrylic Painting Artist, Digital Painting Artist Etc.
+                </p>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input
+                id="os-desinger"
+                type="checkbox"
+                value="os-desinger"
+                class="w-4 h-4 -mt-3.5 accent-brand-green hover:brand-green/80 bg-gray-100 border-gray-300"
+              />
+              <label for="os-desinger" class="ms-2">
+                <p class="font-medium">Outdoor & Signage Designer</p>
+                <p class="text-xs">
+                  Billboard Designer, Signage Designer and more.
+                </p>
+              </label>
+            </div>
+          </aside>
+          <hr class="col-span-full my-3" />
+          <!-- checkbox selection 2-->
+          <aside class="col-span-full">
+            <div class="mb-3">
+              <span class="font-bold">Select your skills </span
+              ><span class="font-normal gap-1 items-center inline-flex"
+                >(2/10) <img src="/assets/info.svg"
+              /></span>
+              <p>Choose your primary expertise category.</p>
+            </div>
+
+            <div class="flex items-center mb-4">
+              <input
+                id="artist"
+                type="checkbox"
+                value="artist"
+                class="w-4 h-4 -mt-3.5 accent-brand-green hover:brand-green/80 bg-gray-100 border-gray-300"
+              />
+              <label for="artist" class="ms-2">
+                <p class="font-medium">Painting Artist</p>
+                <p class="text-xs">You selected</p>
+              </label>
+            </div>
+
+            <input
+              placeholder="Add skills"
+              class="block w-full p-4 rounded mb-2 border focus-visible:outline-brand-green placeholder:text-neutral-400 font-medium border-stone-300"
+            />
+            <div
+              class="py-2 px-2.5 gap-3 inline-flex whitespace-nowrap bg-gray-200 rounded-full text-gray-500 text-xs font-medium"
+            >
+              Logo design <img src="/assets/close.svg" />
+            </div>
+          </aside>
+        </section>
+      </main>
+      <footer class="flex justify-end gap-5 p-5 bg-gray-50">
+        <button
+          class="w-32 h-16 bg-gray-200 rounded text-gray-500 font-semibold"
+        >
+          Cancel
+        </button>
+        <button
+          class="w-32 h-16 bg-brand-green rounded text-white font-semibold"
+        >
+          Update
+        </button>
+      </footer>
+    </section>
+  </body>
+</html>

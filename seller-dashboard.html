@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                green: "#67993F",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <br />
+    <section class="max-w-[58rem] text-zinc-700 container mx-auto">
+      <!-- alert -->
+      <header
+        class="bg-pink-50 flex items-stretch justify-between gap-5 px-6 pb-4 pt-3 rounded-md max-md:flex-wrap max-md:pr-5"
+      >
+        <div
+          class="flex justify-between gap-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+        >
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/86f3874e933788e563e8d9222f2e9dabb4cd41f355530d89984013fcc19d3d0a?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+            class="aspect-[1.21] object-contain object-center mt-1 w-[29px] fill-red-700 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="text-emerald-700 text-base leading-5 grow shrink basis-auto mt-1.5 max-md:max-w-full"
+          >
+            <h1 class="font-semibold text-xl leading-6 text-red-700">
+              Apologies! Your account was not accepted
+            </h1>
+            <p class="text-zinc-800">
+              If you have any query, please don’t hesitate to
+              <a href="..." class="text-emerald-700">contact us</a>
+            </p>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/206d1c1d855db39e4817e942eb940c65aadcf6b06160206dbb3f212eae4e1e94?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
+        />
+      </header>
+      <br />
+      <!-- alert 2 -->
+      <header
+        class="bg-gray-100 flex items-stretch justify-between gap-5 pb-4 px-6 rounded-md max-md:flex-wrap max-md:pr-5"
+      >
+        <div
+          class="flex justify-between gap-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+        >
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8291a8e2ffdbd0fd50d580ae2f071c2445edc9908f0d44ab482434e23723ad33?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+            class="aspect-[1.26] object-contain object-center w-[29px] mt-2 fill-blue-950 overflow-hidden shrink-0 max-w-full"
+            alt="Profile Photo"
+          />
+          <div
+            class="text-lime-500 text-base leading-5 grow shrink basis-auto mt-2.5 max-md:max-w-full"
+          >
+            <h1 class="font-semibold text-xl leading-6 text-blue-950">
+              Attention! Your profile needs some changes.
+            </h1>
+            <p class="text-gray-900">Changes:</p>
+            <ol role="list" class="list-decimal text-gray-500 list-inside">
+              <li>
+                Your profile title is not professional, please update the title.
+              </li>
+              <li>
+                Your profile brief writing is not professional and remove
+                personal contact information.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/36e8ead60fd450251a1741f3369706ffb041b6d35692c0d04f1f3a64a77f7b6d?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden shrink-0 max-w-full mt-2 self-start"
+          alt="Logo"
+        />
+      </header>
+      <br />
+      <!-- alert 3 -->
+      <header
+        class="bg-green-100 flex items-stretch justify-between gap-5 px-5 py-4 rounded-md max-md:flex-wrap"
+      >
+        <div
+          class="flex justify-between gap-4 items-start max-md:max-w-full max-md:flex-wrap"
+        >
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d7387c701fa382b57667a463036d9fb391050f375d7f7bef17f1f233ba36507?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+            class="aspect-[0.93] object-contain object-center w-7 fill-emerald-900 overflow-hidden shrink-0 max-w-full"
+          />
+          <div
+            class="text-zinc-800 text-base leading-5 self-stretch grow shrink basis-auto max-md:max-w-full"
+          >
+            <h1
+              class="font-semibold text-xl leading-7 align-bottom text-emerald-900"
+              aria-label="Congratulations! Your profile is now fully active."
+            >
+              Congratulations! Your profile is now fully active.
+            </h1>
+            <span class="text-zinc-800">You're now all set to start</span>
+            <a
+              href="#"
+              class="text-zinc-800 underline"
+              role="button"
+              aria-label="Bidding Job"
+              >Bidding Job</a
+            >
+            <span class="text-zinc-800">,</span>
+            <a
+              href="#"
+              class="text-zinc-800 underline"
+              role="button"
+              aria-label="Add Gigs"
+              >Add Gigs</a
+            >
+            <span class="text-zinc-800"
+              >Thanks for being a part of Gotlancer.</span
+            >
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2662b7d70a64a5a0355b5c19b6138ac46e507174c30edfe7ff9b9d749a8c4eb?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
+        />
+      </header>
+    </section>
+  </body>
+</html>

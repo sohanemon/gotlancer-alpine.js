@@ -23,7 +23,7 @@
 
   <body>
     <br />
-    <section class="max-w-[58rem] text-zinc-700 container mx-auto">
+    <section class="max-w-[80rem] px-4 text-zinc-700 container mx-auto">
       <!-- alert -->
       <header
         class="bg-pink-50 flex items-stretch justify-between gap-5 px-6 pb-4 pt-3 rounded-md max-md:flex-wrap max-md:pr-5"
@@ -37,7 +37,7 @@
             class="aspect-[1.21] object-contain object-center mt-1 w-[29px] fill-red-700 overflow-hidden shrink-0 max-w-full"
           />
           <div
-            class="text-emerald-700 text-base leading-5 grow shrink basis-auto mt-1.5 max-md:max-w-full"
+            class="text-emerald-700 leading-5 grow shrink basis-auto mt-1.5 max-md:max-w-full"
           >
             <h1 class="font-semibold text-xl leading-6 text-red-700">
               Apologies! Your account was not accepted
@@ -69,7 +69,7 @@
             alt="Profile Photo"
           />
           <div
-            class="text-lime-500 text-base leading-5 grow shrink basis-auto mt-2.5 max-md:max-w-full"
+            class="text-lime-500 leading-5 grow shrink basis-auto mt-2.5 max-md:max-w-full"
           >
             <h1 class="font-semibold text-xl leading-6 text-blue-950">
               Attention! Your profile needs some changes.
@@ -107,7 +107,7 @@
             class="aspect-[0.93] object-contain object-center w-7 fill-emerald-900 overflow-hidden shrink-0 max-w-full"
           />
           <div
-            class="text-zinc-800 text-base leading-5 self-stretch grow shrink basis-auto max-md:max-w-full"
+            class="text-zinc-800 leading-5 self-stretch grow shrink basis-auto max-md:max-w-full"
           >
             <h1
               class="font-semibold text-xl leading-7 align-bottom text-emerald-900"
@@ -156,7 +156,7 @@
             class="aspect-[1.16] object-contain object-center w-[29px] fill-yellow-800 overflow-hidden shrink-0 max-w-full my-auto"
           />
           <div
-            class="text-yellow-800 text-base leading-5 self-stretch grow shrink basis-auto max-md:max-w-full"
+            class="text-yellow-800 leading-5 self-stretch grow shrink basis-auto max-md:max-w-full"
           >
             <span class="font-semibold text-xl leading-6 text-yellow-800">
               Your account has not been activated
@@ -173,7 +173,7 @@
       </header>
       <!-- Main Store section -->
       <br />
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <aside class="col-span-2">
           <!-- left side -->
           <header
@@ -248,9 +248,10 @@
             </div>
           </header>
           <br />
-          <section>
+          <!-- cards section -->
+          <section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <header
-              class="border border-[color:var(--Gray-300,#D1D5DB)] shadow-sm bg-white flex max-w-[262px] flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
             >
               <div class="flex items-stretch justify-between gap-5">
                 <div class="flex flex-col items-stretch">
@@ -267,17 +268,193 @@
                 </div>
                 <img
                   loading="lazy"
-                  srcset="
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100   100w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=200   200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=400   400w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=800   800w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=1200 1200w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=1600 1600w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=2000 2000w,
-                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&
-                  "
-                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-[50%] self-start"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
+                />
+              </div>
+              <div
+                class="items-stretch flex justify-between gap-1.5 mt-1.5 pr-2"
+              >
+                <header class="text-gray-500 text-sm">
+                  Transection History
+                </header>
+                <header
+                  class="text-gray-500 text-sm font-black leading-4 self-center whitespace-nowrap my-auto"
+                >
+                  &rarr;
+                </header>
+              </div>
+            </header>
+            <header
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+            >
+              <div class="flex items-stretch justify-between gap-5">
+                <div class="flex flex-col items-stretch">
+                  <header
+                    class="text-gray-500 text-sm font-medium leading-3 whitespace-nowrap"
+                  >
+                    Total Earned
+                  </header>
+                  <header
+                    class="text-slate-600 text-2xl font-semibold leading-9 whitespace-nowrap mt-4"
+                  >
+                    $43,594
+                  </header>
+                </div>
+                <img
+                  loading="lazy"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
+                />
+              </div>
+              <div
+                class="items-stretch flex justify-between gap-1.5 mt-1.5 pr-2"
+              >
+                <header class="text-gray-500 text-sm">
+                  Transection History
+                </header>
+                <header
+                  class="text-gray-500 text-sm font-black leading-4 self-center whitespace-nowrap my-auto"
+                >
+                  &rarr;
+                </header>
+              </div>
+            </header>
+            <header
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+            >
+              <div class="flex items-stretch justify-between gap-5">
+                <div class="flex flex-col items-stretch">
+                  <header
+                    class="text-gray-500 text-sm font-medium leading-3 whitespace-nowrap"
+                  >
+                    Total Earned
+                  </header>
+                  <header
+                    class="text-slate-600 text-2xl font-semibold leading-9 whitespace-nowrap mt-4"
+                  >
+                    $43,594
+                  </header>
+                </div>
+                <img
+                  loading="lazy"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
+                />
+              </div>
+              <div
+                class="items-stretch flex justify-between gap-1.5 mt-1.5 pr-2"
+              >
+                <header class="text-gray-500 text-sm">
+                  Transection History
+                </header>
+                <header
+                  class="text-gray-500 text-sm font-black leading-4 self-center whitespace-nowrap my-auto"
+                >
+                  &rarr;
+                </header>
+              </div>
+            </header>
+
+            <h2 class="col-span-full text-zinc-800 mt-4 font-bold">
+              Gigs Overview
+            </h2>
+            <header
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+            >
+              <div class="flex items-stretch justify-between gap-5">
+                <div class="flex flex-col items-stretch">
+                  <header
+                    class="text-gray-500 text-sm font-medium leading-3 whitespace-nowrap"
+                  >
+                    Total Earned
+                  </header>
+                  <header
+                    class="text-slate-600 text-2xl font-semibold leading-9 whitespace-nowrap mt-4"
+                  >
+                    $43,594
+                  </header>
+                </div>
+                <img
+                  loading="lazy"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
+                />
+              </div>
+              <div
+                class="items-stretch flex justify-between gap-1.5 mt-1.5 pr-2"
+              >
+                <header class="text-gray-500 text-sm">
+                  Transection History
+                </header>
+                <header
+                  class="text-gray-500 text-sm font-black leading-4 self-center whitespace-nowrap my-auto"
+                >
+                  &rarr;
+                </header>
+              </div>
+            </header>
+            <header
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+            >
+              <div class="flex items-stretch justify-between gap-5">
+                <div class="flex flex-col items-stretch">
+                  <header
+                    class="text-gray-500 text-sm font-medium leading-3 whitespace-nowrap"
+                  >
+                    Total Earned
+                  </header>
+                  <header
+                    class="text-slate-600 text-2xl font-semibold leading-9 whitespace-nowrap mt-4"
+                  >
+                    $43,594
+                  </header>
+                </div>
+                <img
+                  loading="lazy"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
+                />
+              </div>
+              <div
+                class="items-stretch flex justify-between gap-1.5 mt-1.5 pr-2"
+              >
+                <header class="text-gray-500 text-sm">
+                  Transection History
+                </header>
+                <header
+                  class="text-gray-500 text-sm font-black leading-4 self-center whitespace-nowrap my-auto"
+                >
+                  &rarr;
+                </header>
+              </div>
+            </header>
+            <header
+              class="border border-[#D1D5DB] shadow-sm bg-white flex flex-col items-stretch pl-4 pr-3 pt-5 pb-2 rounded-xl border-solid"
+            >
+              <div class="flex items-stretch justify-between gap-5">
+                <div class="flex flex-col items-stretch">
+                  <header
+                    class="text-gray-500 text-sm font-medium leading-3 whitespace-nowrap"
+                  >
+                    Total Earned
+                  </header>
+                  <header
+                    class="text-slate-600 text-2xl font-semibold leading-9 whitespace-nowrap mt-4"
+                  >
+                    $43,594
+                  </header>
+                </div>
+                <img
+                  loading="lazy"
+                  src="
+                    https://cdn.builder.io/api/v1/image/assets/TEMP/36f51763-6bfe-40f5-8d6f-3b3565d3f3b2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
+                  class="aspect-square object-contain object-center w-[38px] overflow-hidden shrink-0 max-w-full rounded-full self-start"
                 />
               </div>
               <div
@@ -294,29 +471,50 @@
               </div>
             </header>
             <br />
+            <br />
+            <!-- my Contact -->
+            <header
+              class="shadow-md bg-white flex col-span-full flex-col items-center pl-7 pr-9 pt-7 pb-12 rounded-xl max-md:px-5"
+            >
+              <h1
+                class="text-zinc-800 font-semibold leading-4 self-stretch max-md:max-w-full"
+              >
+                My Contracts
+              </h1>
+              <p
+                class="text-gray-700 text-sm leading-4 self-stretch mt-2 max-md:max-w-full"
+              >
+                This is the contract table subtitle
+              </p>
+              <hr
+                class="bg-zinc-300 self-stretch shrink-0 h-0.5 mt-4 max-md:max-w-full"
+              />
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a28cc9f73e859f573197a1b8fc5971b693c8b266c81eef611418c3f2626df9f6?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+                class="aspect-square object-contain object-center w-[106px] overflow-hidden max-w-full mt-20 max-md:mt-10"
+              />
+              <p
+                class="text-stone-300 text-center text-sm leading-4 w-[245px] mb-16 max-md:mb-10"
+              >
+                No contracts available
+              </p>
+            </header>
           </section>
         </aside>
-        <aside class="flex flex-col justify-center items-stretch pl-2 h-fit">
-          <!-- right side -->
+        <aside class="flex flex-col justify-center items-stretch h-fit">
+          <!-- right side / profile -->
           <div
-            class="shadow bg-white flex w-full flex-col items-center px-6 pt-3.5 rounded-xl"
+            class="shadow bg-white flex w-full flex-col items-center px-6 md:px-12 pt-3.5 rounded-xl"
           >
             <img
               loading="lazy"
-              srcset="
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100   100w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=200   200w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=400   400w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=800   800w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=1200 1200w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=1600 1600w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=2000 2000w,
-                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&
-              "
+              src="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/f698dd81749515c90ccbadcdac09028a28f2708c52bb2e32df2454cba9e38e60?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&width=100"
               class="aspect-square object-contain object-center w-[90px] justify-center items-center overflow-hidden max-w-full"
             />
             <div
-              class="text-neutral-800 text-center text-base font-semibold leading-6 mt-2"
+              class="text-neutral-800 text-center font-semibold leading-6 mt-2"
             >
               Matt Rogers <br />
               <span class="font-light text-neutral-500">Seller Dashboard</span>
@@ -341,7 +539,7 @@
             </div>
             <hr class="my-3 border" />
             <div
-              class="text-gray-700 text-base font-medium leading-loose self-stretch my-4"
+              class="text-gray-700 font-medium leading-loose self-stretch my-4"
             >
               <p>Upgrade Membership</p>
               <p>Get Paid Now</p>
@@ -352,5 +550,6 @@
         </aside>
       </section>
     </section>
+    <br />
   </body>
 </html>

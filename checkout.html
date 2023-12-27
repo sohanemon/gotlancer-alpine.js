@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                green: '#67993F',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <br />
+    <section class="max-w-[80rem] px-4 text-zinc-700 container mx-auto">
+      <h2 class="text-zinc-800 text-4xl font-medium leading-3">Checkout</h2>
+      <br />
+      <section
+        class="text-zinc-800 text-2xl font-medium leading-3 whitespace-nowrap shadow bg-white px-6 py-8 rounded-xl max-md:px-5"
+        aria-label="Payment Method Selection"
+      >
+        <p class="mb-4">Select a payment method</p>
+
+        <header class="flex items-center">
+          <input name="payment" id="stripe" type="radio" class="w-6 h-6" />
+          <label for="stripe" class="flex items-center gap-2 px-2 w-full">
+            <img
+              loading="lazy"
+              src="/assets/stripe.svg"
+              class="aspect-[2.44] object-contain object-center w-[78px]"
+            />
+            <div class="grow"></div>
+            <img
+              loading="lazy"
+              src="/assets/visa.svg"
+              class="aspect-[3.21] object-contain object-center w-[45px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/master-card.svg"
+              class="aspect-[1.68] object-contain object-center w-[37px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/express.svg"
+              class="aspect-[1.54] object-contain object-center w-[37px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/jcb.svg"
+              class="aspect-[1.36] object-contain object-center w-[30px]"
+            />
+          </label>
+        </header>
+        <header class="flex items-center">
+          <input name="payment" id="paypal" type="radio" class="w-6 h-6" />
+          <label for="paypal" class="flex items-center gap-2 px-2 w-full">
+            <img
+              loading="lazy"
+              src="/assets/paypal.svg"
+              class="aspect-[2.44] object-contain object-center w-[122 px]"
+            />
+            <div class="grow"></div>
+            <img
+              loading="lazy"
+              src="/assets/visa.svg"
+              class="aspect-[3.21] object-contain object-center w-[45px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/master-card.svg"
+              class="aspect-[1.68] object-contain object-center w-[37px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/express.svg"
+              class="aspect-[1.54] object-contain object-center w-[37px]"
+            />
+            <img
+              loading="lazy"
+              src="/assets/jcb.svg"
+              class="aspect-[1.36] object-contain object-center w-[30px]"
+            />
+          </label>
+        </header>
+      </section>
+    </section>
+    <br />
+  </body>
+</html>

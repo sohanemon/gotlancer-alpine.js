@@ -24,77 +24,296 @@
   <body>
     <br />
     <section class="max-w-[80rem] px-4 text-zinc-700 container mx-auto">
-      <h2 class="text-zinc-800 text-4xl font-medium leading-3">Checkout</h2>
+      <h2 class="text-zinc-800 text-4xl font-medium">Checkout</h2>
       <br />
-      <section
-        class="text-zinc-800 text-2xl font-medium leading-3 whitespace-nowrap shadow bg-white px-6 py-8 rounded-xl max-md:px-5"
-        aria-label="Payment Method Selection"
-      >
-        <p class="mb-4">Select a payment method</p>
-
-        <header class="flex items-center">
-          <input name="payment" id="stripe" type="radio" class="w-6 h-6" />
-          <label for="stripe" class="flex items-center gap-2 px-2 w-full">
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-11 lg:grid-cols-3">
+        <!-- left section -->
+        <section
+          class="text-zinc-800 h-fit md:col-span-2 divide-y [&>header]:max-md:flex-wrap [&>header]:pt-1 grid grid-rows-4 text-2xl font-medium whitespace-nowrap shadow bg-white px-6 py-8 rounded-xl max-md:px-5"
+          aria-label="Payment Method Selection"
+        >
+          <p>Select a payment method</p>
+          <header class="flex items-center !border-t-0">
+            <input name="payment" id="wallet" type="radio" class="w-6 h-6" />
+            <label for="wallet" class="flex items-center gap-2 px-2 w-full">
+              <div>
+                <p class="text-neutral-700 text-base font-semibold">
+                  Pay from Wallet
+                </p>
+                <p class="text-gray-500 text-sm font-normal">
+                  Insufficient fund in your account.
+                  <a href="/" class="text-lime-600">Top-Up</a>
+                </p>
+              </div>
+              <div class="grow"></div>
+              <div class="text-right">
+                <p class="text-gray-500 text-sm font-normal">Available:</p>
+                <p class="text-red-700 text-sm font-normal">$10.00 USD</p>
+              </div>
+            </label>
+          </header>
+          <header class="flex items-center">
+            <input name="payment" id="stripe" type="radio" class="w-6 h-6" />
+            <label for="stripe" class="flex items-center gap-2 px-2 w-full">
+              <img
+                loading="lazy"
+                src="/assets/stripe.svg"
+                class="aspect-[2.44] object-contain object-center w-[78px]"
+              />
+              <div class="grow"></div>
+              <img
+                loading="lazy"
+                src="/assets/visa.svg"
+                class="aspect-[3.21] object-contain object-center w-[45px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/master-card.svg"
+                class="aspect-[1.68] object-contain object-center w-[37px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/express.svg"
+                class="aspect-[1.54] object-contain object-center w-[37px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/jcb.svg"
+                class="aspect-[1.36] object-contain object-center w-[30px]"
+              />
+            </label>
+          </header>
+          <header class="flex items-center">
+            <input name="payment" id="paypal" type="radio" class="w-6 h-6" />
+            <label for="paypal" class="flex items-center gap-2 px-2 w-full">
+              <img
+                loading="lazy"
+                src="/assets/paypal.svg"
+                class="aspect-[2.44] object-contain object-center w-[122 px]"
+              />
+              <div class="grow"></div>
+              <img
+                loading="lazy"
+                src="/assets/visa.svg"
+                class="aspect-[3.21] object-contain object-center w-[45px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/master-card.svg"
+                class="aspect-[1.68] object-contain object-center w-[37px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/express.svg"
+                class="aspect-[1.54] object-contain object-center w-[37px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/jcb.svg"
+                class="aspect-[1.36] object-contain object-center w-[30px]"
+              />
+            </label>
+          </header>
+          <header class="flex items-center">
+            <input name="payment" id="razorpay" type="radio" class="w-6 h-6" />
+            <label for="razorpay" class="flex items-center gap-2 px-2 w-full">
+              <div>
+                <img
+                  loading="lazy"
+                  src="/assets/razorpay.svg"
+                  class="aspect-[2.44] object-contain object-center w-[122 px]"
+                />
+                <p class="text-gray-500 text-sm font-normal">
+                  Pay with your card and for INR payment only
+                </p>
+              </div>
+              <div class="grow"></div>
+              <img
+                loading="lazy"
+                src="/assets/visa.svg"
+                class="aspect-[3.21] object-contain object-center w-[45px]"
+              />
+              <img
+                loading="lazy"
+                src="/assets/master-card.svg"
+                class="aspect-[1.68] object-contain object-center w-[37px]"
+              />
+            </label>
+          </header>
+        </section>
+        <!-- right section -->
+        <section class="bg-white rounded-lg px-5 py-7 shadow">
+          <header
+            class="self-stretch flex items-stretch justify-between gap-5 px-px"
+          >
+            <div class="flex flex-col items-stretch">
+              <h2
+                class="text-zinc-800 text-2xl font-medium leading-3 whitespace-nowrap"
+              >
+                Order Summary
+              </h2>
+              <div class="text-gray-500 text-base leading-3 mt-4">
+                Gig Price
+              </div>
+              <div
+                class="text-gray-500 text-base leading-3 whitespace-nowrap mt-2"
+              >
+                Add-on: 1 day delivery
+              </div>
+            </div>
+            <div class="flex flex-col items-stretch mt-10 self-end">
+              <div
+                class="text-gray-500 text-right text-sm font-semibold leading-3 whitespace-nowrap"
+              >
+                $80.00
+              </div>
+              <div
+                class="text-gray-500 text-right text-sm font-semibold leading-3 whitespace-nowrap mt-2.5"
+              >
+                $20.00
+              </div>
+            </div>
+          </header>
+          <p
+            class="text-blue-700 text-sm leading-4 self-stretch mt-2.5"
+            aria-label="Design description"
+          >
+            I will design your perfect 3d exterior, interior, plan, and
+            renderings
+          </p>
+          <div class="bg-gray-300 self-stretch shrink-0 h-[1px] mt-1"></div>
+          <section
+            class="self-stretch flex items-center justify-between gap-3 mt-2.5"
+          >
+            <div class="flex grow basis-[0%] flex-col items-stretch my-auto">
+              <div class="text-gray-500 text-sm leading-3">Sub Total</div>
+              <div class="text-gray-500 text-sm leading-3 mt-4">
+                Processing Fee (3.8%)
+              </div>
+              <div class="text-gray-500 text-sm leading-3 mt-3">
+                Gotlancer Platform Fee (2%)
+              </div>
+              <div
+                class="text-gray-500 text-sm leading-3 whitespace-nowrap mt-3"
+              >
+                GST (IN) (18%) of Processing Fee
+              </div>
+              <div
+                class="text-zinc-800 text-base font-semibold leading-3 mt-12"
+              >
+                Grand Total
+              </div>
+              <div class="text-zinc-800 text-base font-semibold leading-3 mt-5">
+                You are paying in INR
+              </div>
+            </div>
+            <div
+              class="self-stretch flex grow basis-[0%] flex-col items-stretch"
+            >
+              <div class="flex flex-col pl-14">
+                <div
+                  class="text-gray-500 text-right text-sm font-semibold leading-3 self-stretch whitespace-nowrap"
+                >
+                  $100.00
+                </div>
+                <div
+                  class="text-gray-500 text-right text-sm leading-3 whitespace-nowrap ml-5 mt-4"
+                >
+                  $3.80
+                </div>
+                <div
+                  class="text-gray-500 text-right text-sm leading-3 whitespace-nowrap ml-5 mt-3.5"
+                >
+                  $2.00
+                </div>
+                <div
+                  class="text-gray-500 text-right text-sm leading-3 whitespace-nowrap ml-5 mt-3"
+                >
+                  $0.36
+                </div>
+              </div>
+              <div
+                class="text-zinc-800 text-right text-2xl font-semibold leading-3 whitespace-nowrap mt-11"
+              >
+                $106.16
+              </div>
+              <div
+                class="text-lime-600 text-right text-2xl font-semibold leading-3 whitespace-nowrap mt-4"
+              >
+                ₹8,831.45
+              </div>
+            </div>
+          </section>
+          <p class="text-gray-500 text-sm leading-5 self-stretch">
+            Exchange Rate $1 USD = ₹83.19 INR
+          </p>
+          <button
+            class="text-white w-full text-2xl font-medium leading-3 whitespace-nowrap bg-lime-500 self-stretch justify-center items-center mt-5 px-16 py-5 rounded-md"
+            role="button"
+          >
+            Confirm & Pay
+          </button>
+          <p
+            class="text-gray-500 text-center text-sm leading-5 self-stretch mt-5"
+          >
+            By clicking on Confirm &amp; Pay you agree to <br />
+            the <a href="#" class="underline">Terms &amp; Conditions</a>
+          </p>
+          <center
+            class="self-center flex justify-center items-center gap-1.5 mt-7"
+          >
             <img
               loading="lazy"
-              src="/assets/stripe.svg"
-              class="aspect-[2.44] object-contain object-center w-[78px]"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bba3c4e20ec78dbeabffc78f156b66c71d47db609f7d16901253187d29aeedd?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-square object-contain object-center w-[21px] overflow-hidden shrink-0 max-w-full"
             />
-            <div class="grow"></div>
+            <p
+              class="text-gray-500 text-center text-sm font-medium leading-5 whitespace-nowrap"
+            >
+              Secured Payment
+            </p>
+          </center>
+          <footer
+            class="text-gray-500 text-center text-sm font-medium leading-5 self-center whitespace-nowrap mt-7"
+          >
+            We accept payment Through
+          </footer>
+          <center
+            class="self-center flex items-center justify-center gap-2 mt-3.5"
+          >
             <img
               loading="lazy"
-              src="/assets/visa.svg"
-              class="aspect-[3.21] object-contain object-center w-[45px]"
-            />
-            <img
-              loading="lazy"
-              src="/assets/master-card.svg"
-              class="aspect-[1.68] object-contain object-center w-[37px]"
-            />
-            <img
-              loading="lazy"
-              src="/assets/express.svg"
-              class="aspect-[1.54] object-contain object-center w-[37px]"
-            />
-            <img
-              loading="lazy"
-              src="/assets/jcb.svg"
-              class="aspect-[1.36] object-contain object-center w-[30px]"
-            />
-          </label>
-        </header>
-        <header class="flex items-center">
-          <input name="payment" id="paypal" type="radio" class="w-6 h-6" />
-          <label for="paypal" class="flex items-center gap-2 px-2 w-full">
-            <img
-              loading="lazy"
-              src="/assets/paypal.svg"
-              class="aspect-[2.44] object-contain object-center w-[122 px]"
-            />
-            <div class="grow"></div>
-            <img
-              loading="lazy"
-              src="/assets/visa.svg"
-              class="aspect-[3.21] object-contain object-center w-[45px]"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5fdac236940524fb64d4514539e9cf9d72f8705e9a1eeec3ed708bdc3d57e877?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-[3.93] object-contain object-center w-[59px] overflow-hidden self-center shrink-0 max-w-full my-auto"
+              alt=""
             />
             <img
               loading="lazy"
-              src="/assets/master-card.svg"
-              class="aspect-[1.68] object-contain object-center w-[37px]"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/53dc78a2c0746a784409781a4015970c9a11b8046a6d1915346be1f38097c711?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-[3.21] object-contain object-center w-[45px] overflow-hidden self-center shrink-0 max-w-full my-auto"
+              alt=""
             />
             <img
               loading="lazy"
-              src="/assets/express.svg"
-              class="aspect-[1.54] object-contain object-center w-[37px]"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f3e5098bb98439091a9ee983d6d44d226eb4c302ed3baaa275e654984617110a?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-[1.68] object-contain object-center w-[37px] overflow-hidden shrink-0 max-w-full self-start"
+              alt=""
             />
             <img
               loading="lazy"
-              src="/assets/jcb.svg"
-              class="aspect-[1.36] object-contain object-center w-[30px]"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d309c0d0ae6c212a513efd8828e96507adbf6a32cf6e1686089b0c013eb12e9?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-[1.54] object-contain object-center w-[37px] overflow-hidden self-stretch shrink-0 max-w-full"
+              alt=""
             />
-          </label>
-        </header>
-      </section>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce1f2f7b0dbe945ce6f011cf96bdc91b5496b92cfb7dfdb711cd72784d0a02e2?apiKey=13cc781f22ed46d5a94fbf5d79ccfd19&"
+              class="aspect-[1.36] object-contain object-center w-[30px] overflow-hidden shrink-0 max-w-full self-start"
+              alt=""
+            />
+          </center>
+        </section>
+      </main>
     </section>
     <br />
   </body>

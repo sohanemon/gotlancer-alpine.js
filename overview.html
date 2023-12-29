@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="https://riverr.edhub.me/public/css/app.css"
+      as="style"
+    />
+    <link rel="stylesheet" href="https://riverr.edhub.me/public/css/app.css" />
+    <link
+      rel="preload"
+      href="https://riverr.edhub.me/public/vendor/livewire/livewire.js"
+      as="script"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <section class="max-w-[80rem] px-4 text-zinc-700 container mx-auto">
+      <h2 class="text-neutral-900 text-4xl font-bold leading-10">Overview</h2>
+      <br />
+      <div class="bg-white rounded-lg shadow border border-gray-300">
+        <header class="mb-4 border-b border-gray-200">
+          <ul
+            class="grid md:grid-cols-4 [&>li>button]:w-full px-8 -mb-px text-sm font-medium text-center"
+            id="default-tab"
+            data-tabs-toggle="#default-tab-content"
+            role="tablist"
+          >
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-flex items-start flex-col max-md:items-center p-4 border-b-2 px-4 pt-6 pb-4 whitespace-nowrap aria-selected:!border-lime-500 rounded-t-lg"
+                data-tabs-target="#progress"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                <p
+                  class="text-gray-500 text-xs font-normal inline-flex items-center gap-1 leading-none"
+                >
+                  Work In Progress
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20_2631)">
+                      <path
+                        d="M4.58337 7.50004H5.41671V6.66671H4.58337V7.50004ZM5.00004 0.833374C2.70004 0.833374 0.833374 2.70004 0.833374 5.00004C0.833374 7.30004 2.70004 9.16671 5.00004 9.16671C7.30004 9.16671 9.16671 7.30004 9.16671 5.00004C9.16671 2.70004 7.30004 0.833374 5.00004 0.833374ZM5.00004 8.33337C3.16254 8.33337 1.66671 6.83754 1.66671 5.00004C1.66671 3.16254 3.16254 1.66671 5.00004 1.66671C6.83754 1.66671 8.33337 3.16254 8.33337 5.00004C8.33337 6.83754 6.83754 8.33337 5.00004 8.33337ZM5.00004 2.50004C4.07921 2.50004 3.33337 3.24587 3.33337 4.16671H4.16671C4.16671 3.70837 4.54171 3.33337 5.00004 3.33337C5.45837 3.33337 5.83337 3.70837 5.83337 4.16671C5.83337 5.00004 4.58337 4.89587 4.58337 6.25004H5.41671C5.41671 5.31254 6.66671 5.20837 6.66671 4.16671C6.66671 3.24587 5.92087 2.50004 5.00004 2.50004Z"
+                        fill="#6B7280"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20_2631">
+                        <rect width="10" height="10" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </p>
+                <p class="text-neutral-900 text-xl font-medium leading-relaxed">
+                  $1000.00
+                </p>
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-flex items-start flex-col max-md:items-center p-4 border-b-2 px-4 pt-6 pb-4 whitespace-nowrap aria-selected:!border-lime-500 rounded-t-lg"
+                data-tabs-target="#review"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                <p
+                  class="text-gray-500 text-xs font-normal inline-flex items-center gap-1 leading-none"
+                >
+                  Buyer Reviewing
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20_2631)">
+                      <path
+                        d="M4.58337 7.50004H5.41671V6.66671H4.58337V7.50004ZM5.00004 0.833374C2.70004 0.833374 0.833374 2.70004 0.833374 5.00004C0.833374 7.30004 2.70004 9.16671 5.00004 9.16671C7.30004 9.16671 9.16671 7.30004 9.16671 5.00004C9.16671 2.70004 7.30004 0.833374 5.00004 0.833374ZM5.00004 8.33337C3.16254 8.33337 1.66671 6.83754 1.66671 5.00004C1.66671 3.16254 3.16254 1.66671 5.00004 1.66671C6.83754 1.66671 8.33337 3.16254 8.33337 5.00004C8.33337 6.83754 6.83754 8.33337 5.00004 8.33337ZM5.00004 2.50004C4.07921 2.50004 3.33337 3.24587 3.33337 4.16671H4.16671C4.16671 3.70837 4.54171 3.33337 5.00004 3.33337C5.45837 3.33337 5.83337 3.70837 5.83337 4.16671C5.83337 5.00004 4.58337 4.89587 4.58337 6.25004H5.41671C5.41671 5.31254 6.66671 5.20837 6.66671 4.16671C6.66671 3.24587 5.92087 2.50004 5.00004 2.50004Z"
+                        fill="#6B7280"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20_2631">
+                        <rect width="10" height="10" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </p>
+                <p class="text-neutral-900 text-xl font-medium leading-relaxed">
+                  $0.00
+                </p>
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-flex items-start flex-col max-md:items-center p-4 border-b-2 px-4 pt-6 pb-4 whitespace-nowrap aria-selected:!border-lime-500 rounded-t-lg"
+                data-tabs-target="#earning"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                <p
+                  class="text-gray-500 text-xs font-normal inline-flex items-center gap-1 leading-none"
+                >
+                  Verify Earning
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20_2631)">
+                      <path
+                        d="M4.58337 7.50004H5.41671V6.66671H4.58337V7.50004ZM5.00004 0.833374C2.70004 0.833374 0.833374 2.70004 0.833374 5.00004C0.833374 7.30004 2.70004 9.16671 5.00004 9.16671C7.30004 9.16671 9.16671 7.30004 9.16671 5.00004C9.16671 2.70004 7.30004 0.833374 5.00004 0.833374ZM5.00004 8.33337C3.16254 8.33337 1.66671 6.83754 1.66671 5.00004C1.66671 3.16254 3.16254 1.66671 5.00004 1.66671C6.83754 1.66671 8.33337 3.16254 8.33337 5.00004C8.33337 6.83754 6.83754 8.33337 5.00004 8.33337ZM5.00004 2.50004C4.07921 2.50004 3.33337 3.24587 3.33337 4.16671H4.16671C4.16671 3.70837 4.54171 3.33337 5.00004 3.33337C5.45837 3.33337 5.83337 3.70837 5.83337 4.16671C5.83337 5.00004 4.58337 4.89587 4.58337 6.25004H5.41671C5.41671 5.31254 6.66671 5.20837 6.66671 4.16671C6.66671 3.24587 5.92087 2.50004 5.00004 2.50004Z"
+                        fill="#6B7280"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20_2631">
+                        <rect width="10" height="10" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </p>
+                <p class="text-neutral-900 text-xl font-medium leading-relaxed">
+                  $0.00
+                </p>
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-flex items-start flex-col max-md:items-center p-4 border-b-2 px-4 pt-6 pb-4 whitespace-nowrap aria-selected:!border-lime-500 rounded-t-lg"
+                data-tabs-target="#balance"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                <p
+                  class="text-gray-500 text-xs font-normal inline-flex items-center gap-1 leading-none"
+                >
+                  Wallet Balance
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20_2631)">
+                      <path
+                        d="M4.58337 7.50004H5.41671V6.66671H4.58337V7.50004ZM5.00004 0.833374C2.70004 0.833374 0.833374 2.70004 0.833374 5.00004C0.833374 7.30004 2.70004 9.16671 5.00004 9.16671C7.30004 9.16671 9.16671 7.30004 9.16671 5.00004C9.16671 2.70004 7.30004 0.833374 5.00004 0.833374ZM5.00004 8.33337C3.16254 8.33337 1.66671 6.83754 1.66671 5.00004C1.66671 3.16254 3.16254 1.66671 5.00004 1.66671C6.83754 1.66671 8.33337 3.16254 8.33337 5.00004C8.33337 6.83754 6.83754 8.33337 5.00004 8.33337ZM5.00004 2.50004C4.07921 2.50004 3.33337 3.24587 3.33337 4.16671H4.16671C4.16671 3.70837 4.54171 3.33337 5.00004 3.33337C5.45837 3.33337 5.83337 3.70837 5.83337 4.16671C5.83337 5.00004 4.58337 4.89587 4.58337 6.25004H5.41671C5.41671 5.31254 6.66671 5.20837 6.66671 4.16671C6.66671 3.24587 5.92087 2.50004 5.00004 2.50004Z"
+                        fill="#6B7280"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20_2631">
+                        <rect width="10" height="10" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </p>
+                <p class="text-neutral-900 text-xl font-medium leading-relaxed">
+                  $0.00
+                </p>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <section class="p-8" id="default-tab-content">
+          <div class="hidden" id="progress" role="tabpanel">
+            <h2
+              class="text-neutral-900 text-xl font-medium leading-7 max-md:max-w-full"
+            >
+              Milestone 1
+            </h2>
+            <table>
+              <header
+                class="bg-zinc-800 self-stretch flex w-full items-stretch justify-between gap-5 mt-4 px-4 py-4 rounded-md max-md:max-w-full max-md:flex-wrap max-md:pr-5"
+              >
+                <div class="flex items-stretch justify-between gap-5">
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Date
+                  </h2>
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Contract Title
+                  </h2>
+                </div>
+                <h2 class="text-white text-base font-semibold leading-5">
+                  Amount
+                </h2>
+              </header>
+              <div
+                class="self-center flex w-full px-4 justify-between gap-5 mt-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+              >
+                <div
+                  class="flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+                >
+                  <div class="text-neutral-900 text-base leading-5">
+                    Dec 15, 2023
+                  </div>
+                  <div
+                    class="text-neutral-900 text-base font-bold leading-5 grow shrink basis-auto"
+                  >
+                    Infinite Zoom Painting on Endless paper
+                  </div>
+                </div>
+                <div class="text-neutral-900 text-base leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+              <div class="flex justify-end gap-5 mt-3.5 px-4 border-t-2 pt-3">
+                <div class="text-neutral-900 text-base leading-5">Total:</div>
+                <div class="text-neutral-900 text-base font-semibold leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+            </table>
+          </div>
+          <div class="hidden" id="review" role="tabpanel">
+            <h2
+              class="text-neutral-900 text-xl font-medium leading-7 max-md:max-w-full"
+            >
+              Milestone 2
+            </h2>
+            <table>
+              <header
+                class="bg-zinc-800 self-stretch flex w-full items-stretch justify-between gap-5 mt-4 px-4 py-4 rounded-md max-md:max-w-full max-md:flex-wrap max-md:pr-5"
+              >
+                <div class="flex items-stretch justify-between gap-5">
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Date
+                  </h2>
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Contract Title
+                  </h2>
+                </div>
+                <h2 class="text-white text-base font-semibold leading-5">
+                  Amount
+                </h2>
+              </header>
+              <div
+                class="self-center flex w-full px-4 justify-between gap-5 mt-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+              >
+                <div
+                  class="flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+                >
+                  <div class="text-neutral-900 text-base leading-5">
+                    Dec 15, 2023
+                  </div>
+                  <div
+                    class="text-neutral-900 text-base font-bold leading-5 grow shrink basis-auto"
+                  >
+                    Infinite Zoom Painting on Endless paper
+                  </div>
+                </div>
+                <div class="text-neutral-900 text-base leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+              <div class="flex justify-end gap-5 mt-3.5 px-4 border-t-2 pt-3">
+                <div class="text-neutral-900 text-base leading-5">Total:</div>
+                <div class="text-neutral-900 text-base font-semibold leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+            </table>
+          </div>
+          <div class="hidden" id="earning" role="tabpanel">
+            <h2
+              class="text-neutral-900 text-xl font-medium leading-7 max-md:max-w-full"
+            >
+              Milestone 3
+            </h2>
+            <table>
+              <header
+                class="bg-zinc-800 self-stretch flex w-full items-stretch justify-between gap-5 mt-4 px-4 py-4 rounded-md max-md:max-w-full max-md:flex-wrap max-md:pr-5"
+              >
+                <div class="flex items-stretch justify-between gap-5">
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Date
+                  </h2>
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Contract Title
+                  </h2>
+                </div>
+                <h2 class="text-white text-base font-semibold leading-5">
+                  Amount
+                </h2>
+              </header>
+              <div
+                class="self-center flex w-full px-4 justify-between gap-5 mt-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+              >
+                <div
+                  class="flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+                >
+                  <div class="text-neutral-900 text-base leading-5">
+                    Dec 15, 2023
+                  </div>
+                  <div
+                    class="text-neutral-900 text-base font-bold leading-5 grow shrink basis-auto"
+                  >
+                    Infinite Zoom Painting on Endless paper
+                  </div>
+                </div>
+                <div class="text-neutral-900 text-base leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+              <div class="flex justify-end gap-5 mt-3.5 px-4 border-t-2 pt-3">
+                <div class="text-neutral-900 text-base leading-5">Total:</div>
+                <div class="text-neutral-900 text-base font-semibold leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+            </table>
+          </div>
+          <div class="hidden" id="balance" role="tabpanel">
+            <h2
+              class="text-neutral-900 text-xl font-medium leading-7 max-md:max-w-full"
+            >
+              Milestone 4
+            </h2>
+            <table>
+              <header
+                class="bg-zinc-800 self-stretch flex w-full items-stretch justify-between gap-5 mt-4 px-4 py-4 rounded-md max-md:max-w-full max-md:flex-wrap max-md:pr-5"
+              >
+                <div class="flex items-stretch justify-between gap-5">
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Date
+                  </h2>
+                  <h2 class="text-white text-base font-semibold leading-5">
+                    Contract Title
+                  </h2>
+                </div>
+                <h2 class="text-white text-base font-semibold leading-5">
+                  Amount
+                </h2>
+              </header>
+              <div
+                class="self-center flex w-full px-4 justify-between gap-5 mt-3.5 items-start max-md:max-w-full max-md:flex-wrap"
+              >
+                <div
+                  class="flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+                >
+                  <div class="text-neutral-900 text-base leading-5">
+                    Dec 15, 2023
+                  </div>
+                  <div
+                    class="text-neutral-900 text-base font-bold leading-5 grow shrink basis-auto"
+                  >
+                    Infinite Zoom Painting on Endless paper
+                  </div>
+                </div>
+                <div class="text-neutral-900 text-base leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+              <div class="flex justify-end gap-5 mt-3.5 px-4 border-t-2 pt-3">
+                <div class="text-neutral-900 text-base leading-5">Total:</div>
+                <div class="text-neutral-900 text-base font-semibold leading-5">
+                  $500.55 USD
+                </div>
+              </div>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+    <br />
+  </body>
+</html>

@@ -32,7 +32,8 @@
     >
       <!-- tools section -->
       <div
-        class="w-64 px-5 pt-1.5 max-md:hidden pb-5 h-fit space-y-2.5 select-none bg-white rounded shadow"
+        id="tools"
+        class="max-md:fixed top-0 left-0 z-40 max-md:h-screen p-4 overflow-y-auto transition-transform -translate-x-full md:translate-x-0 w-64 px-5 pt-1.5 pb-5 h-fit space-y-2.5 select-none bg-white rounded shadow"
       >
         <details class="group" open>
           <summary role="button" class="flex justify-between">
@@ -254,6 +255,10 @@
             />
           </header>
           <svg
+            data-drawer-target="tools"
+            data-drawer-show="tools"
+            data-drawer-placement="left"
+            aria-controls="tools"
             class="md:hidden"
             width="24"
             height="24"

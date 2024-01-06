@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="https://riverr.edhub.me/public/css/app.css"
+      as="style"
+    />
+    <link rel="stylesheet" href="https://riverr.edhub.me/public/css/app.css" />
+    <link
+      rel="preload"
+      href="https://riverr.edhub.me/public/vendor/livewire/livewire.js"
+      as="script"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <section
+      class="max-w-[80rem] px-4 flex-wrap flex gap-6 text-zinc-700 container mx-auto"
+    >
+      <div
+        class="flex flex-col md:flex-row pt-4 pb-5 mt-[118px] rounded-[5px] shadow w-full px-4"
+      >
+        <!-- button -->
+        <button
+          class="flex md:w-auto w-full h-[51px] bg-blue-100 rounded-[10px] mt-[27px] px-5 justify-center md:justify-start items-center"
+        >
+          <span class="text-[#1D4ED8] w-6"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="9"
+              height="14"
+              viewBox="0 0 9 14"
+              fill="none"
+            >
+              <path
+                d="M8.64502 1.645L3.30169 7L8.64502 12.355L7.00002 14L1.97212e-05 7L7.00002 -7.19052e-08L8.64502 1.645Z"
+                fill="#1D4ED8"
+              /></svg
+          ></span>
+          <span class="text-[#1D4ED8] font-medium">Back to your project</span>
+        </button>
+
+        <div class="mt-[27px] flex-1 px-[32px]">
+          <div class="text-[#8E8E8E] font-normal leading-6">
+            <p>You are sending invitation for the project</p>
+          </div>
+          <div class="text-[#344050] mt-[4px] font-medium leading-4">
+            <p>Looking for Senior Software Engineer at Technext Limited</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mt-[27px] px-8">
+            <h4 class="uppercase leading-4 font-medium text-[#344050] md:">
+              Invite Credit Available
+            </h4>
+            <h5 class="text-[#344050] text-[23px] font-medium">56</h5>
+            <h6 class="w-[179px] text-[#67993F] font-semibold leading-6">
+              Buy More Invite Credit
+            </h6>
+          </div>
+        </div>
+      </div>
+      <!-- tools section -->
+      <div
+        id="tools"
+        class="max-lg:fixed top-0 left-0 z-40 max-lg:h-screen p-4 overflow-y-auto transition-transform -translate-x-full lg:translate-x-0 min-w-[16rem] px-5 pt-1.5 pb-5 h-fit space-y-2.5 select-none bg-white rounded shadow"
+      >
+        <details class="group" open>
+          <summary role="button" class="flex justify-between">
+            <p class="font-medium text-sm">Talent Type</p>
+            <svg
+              class="group-[&[open]]:inline-block hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8H3C2.80109 8 2.61032 8.10536 2.46967 8.29289C2.32902 8.48043 2.25 8.73478 2.25 9C2.25 9.26522 2.32902 9.51957 2.46967 9.70711C2.61032 9.89464 2.80109 10 3 10H15C15.1989 10 15.3897 9.89464 15.5303 9.70711C15.671 9.51957 15.75 9.26522 15.75 9C15.75 8.73478 15.671 8.48043 15.5303 8.29289C15.3897 8.10536 15.1989 8 15 8Z"
+                fill="#757575"
+              />
+            </svg>
+            <svg
+              class="group-[&[open]]:hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8.25H9.75V3C9.75 2.80109 9.67098 2.61032 9.53033 2.46967C9.38968 2.32902 9.19891 2.25 9 2.25C8.80109 2.25 8.61032 2.32902 8.46967 2.46967C8.32902 2.61032 8.25 2.80109 8.25 3V8.25H3C2.80109 8.25 2.61032 8.32902 2.46967 8.46967C2.32902 8.61032 2.25 8.80109 2.25 9C2.25 9.19891 2.32902 9.38968 2.46967 9.53033C2.61032 9.67098 2.80109 9.75 3 9.75H8.25V15C8.25 15.1989 8.32902 15.3897 8.46967 15.5303C8.61032 15.671 8.80109 15.75 9 15.75C9.19891 15.75 9.38968 15.671 9.53033 15.5303C9.67098 15.3897 9.75 15.1989 9.75 15V9.75H15C15.1989 9.75 15.3897 9.67098 15.5303 9.53033C15.671 9.38968 15.75 9.19891 15.75 9C15.75 8.80109 15.671 8.61032 15.5303 8.46967C15.3897 8.32902 15.1989 8.25 15 8.25Z"
+                fill="#757575"
+              />
+            </svg>
+          </summary>
+          <ul class="py-1 space-y-1.5">
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="talent-type" id="talent-type-any" />
+              <label class="text-sm" for="talent-type-any">Any</label>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input
+                type="radio"
+                name="talent-type"
+                id="talent-type-individuals"
+              />
+              <label class="text-sm" for="talent-type-individuals"
+                >Individuals</label
+              >
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="talent-type" id="talent-type-company" />
+              <label class="text-sm" for="talent-type-company">Company</label>
+            </li>
+          </ul>
+        </details>
+        <details class="group" open>
+          <summary role="button" class="flex justify-between">
+            <p class="font-medium text-sm">Category</p>
+            <svg
+              class="group-[&[open]]:inline-block hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8H3C2.80109 8 2.61032 8.10536 2.46967 8.29289C2.32902 8.48043 2.25 8.73478 2.25 9C2.25 9.26522 2.32902 9.51957 2.46967 9.70711C2.61032 9.89464 2.80109 10 3 10H15C15.1989 10 15.3897 9.89464 15.5303 9.70711C15.671 9.51957 15.75 9.26522 15.75 9C15.75 8.73478 15.671 8.48043 15.5303 8.29289C15.3897 8.10536 15.1989 8 15 8Z"
+                fill="#757575"
+              />
+            </svg>
+            <svg
+              class="group-[&[open]]:hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8.25H9.75V3C9.75 2.80109 9.67098 2.61032 9.53033 2.46967C9.38968 2.32902 9.19891 2.25 9 2.25C8.80109 2.25 8.61032 2.32902 8.46967 2.46967C8.32902 2.61032 8.25 2.80109 8.25 3V8.25H3C2.80109 8.25 2.61032 8.32902 2.46967 8.46967C2.32902 8.61032 2.25 8.80109 2.25 9C2.25 9.19891 2.32902 9.38968 2.46967 9.53033C2.61032 9.67098 2.80109 9.75 3 9.75H8.25V15C8.25 15.1989 8.32902 15.3897 8.46967 15.5303C8.61032 15.671 8.80109 15.75 9 15.75C9.19891 15.75 9.38968 15.671 9.53033 15.5303C9.67098 15.3897 9.75 15.1989 9.75 15V9.75H15C15.1989 9.75 15.3897 9.67098 15.5303 9.53033C15.671 9.38968 15.75 9.19891 15.75 9C15.75 8.80109 15.671 8.61032 15.5303 8.46967C15.3897 8.32902 15.1989 8.25 15 8.25Z"
+                fill="#757575"
+              />
+            </svg>
+          </summary>
+          <ul class="py-1 space-y-1.5">
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="category" id="category-any" />
+              <label class="text-sm" for="category-any">Any</label>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="category" id="category-developers" />
+              <label class="text-sm" for="category-developers"
+                >Developers</label
+              >
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="category" id="category-designers" />
+              <label class="text-sm" for="category-designers">Designers</label>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input
+                type="radio"
+                name="category"
+                id="category-project-managers"
+              />
+              <label class="text-sm" for="category-project-managers"
+                >Project Managers</label
+              >
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input
+                type="radio"
+                name="category"
+                id="category-product-managers"
+              />
+              <label class="text-sm" for="category-product-managers"
+                >Product Managers</label
+              >
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input
+                type="radio"
+                name="category"
+                id="category-finance-experts"
+              />
+              <label class="text-sm" for="category-finance-experts"
+                >Finance Experts</label
+              >
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="category" id="category-writer" />
+              <label class="text-sm" for="category-writer">Writer</label>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input
+                type="radio"
+                name="category"
+                id="category-business-support"
+              />
+              <label class="text-sm" for="category-business-support"
+                >Business Support</label
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="group">
+          <summary role="button" class="flex justify-between">
+            <p class="font-medium text-sm">Sub-Category</p>
+            <svg
+              class="group-[&[open]]:inline-block hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8H3C2.80109 8 2.61032 8.10536 2.46967 8.29289C2.32902 8.48043 2.25 8.73478 2.25 9C2.25 9.26522 2.32902 9.51957 2.46967 9.70711C2.61032 9.89464 2.80109 10 3 10H15C15.1989 10 15.3897 9.89464 15.5303 9.70711C15.671 9.51957 15.75 9.26522 15.75 9C15.75 8.73478 15.671 8.48043 15.5303 8.29289C15.3897 8.10536 15.1989 8 15 8Z"
+                fill="#757575"
+              />
+            </svg>
+            <svg
+              class="group-[&[open]]:hidden"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 8.25H9.75V3C9.75 2.80109 9.67098 2.61032 9.53033 2.46967C9.38968 2.32902 9.19891 2.25 9 2.25C8.80109 2.25 8.61032 2.32902 8.46967 2.46967C8.32902 2.61032 8.25 2.80109 8.25 3V8.25H3C2.80109 8.25 2.61032 8.32902 2.46967 8.46967C2.32902 8.61032 2.25 8.80109 2.25 9C2.25 9.19891 2.32902 9.38968 2.46967 9.53033C2.61032 9.67098 2.80109 9.75 3 9.75H8.25V15C8.25 15.1989 8.32902 15.3897 8.46967 15.5303C8.61032 15.671 8.80109 15.75 9 15.75C9.19891 15.75 9.38968 15.671 9.53033 15.5303C9.67098 15.3897 9.75 15.1989 9.75 15V9.75H15C15.1989 9.75 15.3897 9.67098 15.5303 9.53033C15.671 9.38968 15.75 9.19891 15.75 9C15.75 8.80109 15.671 8.61032 15.5303 8.46967C15.3897 8.32902 15.1989 8.25 15 8.25Z"
+                fill="#757575"
+              />
+            </svg>
+          </summary>
+          <ul class="py-1 space-y-1.5">
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="sub-category" id="sub-category-one" />
+              <label class="text-sm" for="sub-category-one">One</label>
+            </li>
+            <li class="flex gap-2.5 items-center">
+              <input type="radio" name="sub-category" id="sub-category-two" />
+              <label class="text-sm" for="sub-category-two">Two</label>
+            </li>
+          </ul>
+        </details>
+        <button
+          class="py-3 px-5 mt-4 block bg-lime-800 text-white rounded-md w-full"
+        >
+          Filter
+        </button>
+      </div>
+      <!-- search section -->
+      <div
+        class="grow px-5 pt-1.5 pb-5 min-h-96 space-y-2.5 select-none bg-white rounded shadow"
+      >
+        <!-- search box -->
+        <section class="flex items-center gap-3">
+          <header
+            class="items-center shadow grow bg-white flex gap-2 px-3 py-3.5 rounded-md max-md:flex-wrap"
+            role="searchbox"
+          >
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.6821 12.2458C9.66576 13.0361 8.38866 13.5067 7.00167 13.5067C3.68704 13.5067 1 10.8189 1 7.50335C1 4.18779 3.68704 1.5 7.00167 1.5C10.3163 1.5 13.0033 4.18779 13.0033 7.50335C13.0033 8.89059 12.533 10.1679 11.743 11.1845L14.7799 14.2186C15.0731 14.5115 15.0734 14.9867 14.7806 15.2799C14.4878 15.5731 14.0128 15.5734 13.7196 15.2805L10.6821 12.2458ZM11.5029 7.50335C11.5029 9.99002 9.48765 12.0059 7.00167 12.0059C4.5157 12.0059 2.50042 9.99002 2.50042 7.50335C2.50042 5.01668 4.5157 3.00084 7.00167 3.00084C9.48765 3.00084 11.5029 5.01668 11.5029 7.50335Z"
+                fill="#868FA0"
+              />
+            </svg>
+
+            <input
+              class="text-gray-400 text-sm outline-none self-stretch grow max-md:max-w-full"
+              placeholder="Search..."
+            />
+          </header>
+          <svg
+            data-drawer-target="tools"
+            data-drawer-show="tools"
+            data-drawer-placement="left"
+            aria-controls="tools"
+            role="button"
+            class="lg:hidden"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 7.0001H4.424C4.63173 7.65287 5.04175 8.22263 5.59472 8.62696C6.1477 9.03129 6.81497 9.24921 7.5 9.24921C8.18503 9.24921 8.8523 9.03129 9.40528 8.62696C9.95825 8.22263 10.3683 7.65287 10.576 7.0001H21C21.2652 7.0001 21.5196 6.89474 21.7071 6.7072C21.8946 6.51967 22 6.26531 22 6.0001C22 5.73488 21.8946 5.48053 21.7071 5.29299C21.5196 5.10545 21.2652 5.0001 21 5.0001H10.576C10.3683 4.34732 9.95825 3.77756 9.40528 3.37323C8.8523 2.9689 8.18503 2.75098 7.5 2.75098C6.81497 2.75098 6.1477 2.9689 5.59472 3.37323C5.04175 3.77756 4.63173 4.34732 4.424 5.0001H3C2.73478 5.0001 2.48043 5.10545 2.29289 5.29299C2.10536 5.48053 2 5.73488 2 6.0001C2 6.26531 2.10536 6.51967 2.29289 6.7072C2.48043 6.89474 2.73478 7.0001 3 7.0001Z"
+              fill="#B8B8B8"
+            />
+            <path
+              d="M21 11.0001H19.576C19.3683 10.3473 18.9583 9.77756 18.4053 9.37323C17.8523 8.9689 17.185 8.75098 16.5 8.75098C15.815 8.75098 15.1477 8.9689 14.5947 9.37323C14.0417 9.77756 13.6317 10.3473 13.424 11.0001H3C2.73478 11.0001 2.48043 11.1055 2.29289 11.293C2.10536 11.4805 2 11.7349 2 12.0001C2 12.2653 2.10536 12.5197 2.29289 12.7072C2.48043 12.8947 2.73478 13.0001 3 13.0001H13.424C13.6317 13.6529 14.0417 14.2226 14.5947 14.627C15.1477 15.0313 15.815 15.2492 16.5 15.2492C17.185 15.2492 17.8523 15.0313 18.4053 14.627C18.9583 14.2226 19.3683 13.6529 19.576 13.0001H21C21.2652 13.0001 21.5196 12.8947 21.7071 12.7072C21.8946 12.5197 22 12.2653 22 12.0001C22 11.7349 21.8946 11.4805 21.7071 11.293C21.5196 11.1055 21.2652 11.0001 21 11.0001Z"
+              fill="#B8B8B8"
+            />
+            <path
+              d="M21 17.0001H10.576C10.3683 16.3473 9.95825 15.7776 9.40528 15.3732C8.8523 14.9689 8.18503 14.751 7.5 14.751C6.81497 14.751 6.1477 14.9689 5.59472 15.3732C5.04175 15.7776 4.63173 16.3473 4.424 17.0001H3C2.73478 17.0001 2.48043 17.1055 2.29289 17.293C2.10536 17.4805 2 17.7349 2 18.0001C2 18.2653 2.10536 18.5197 2.29289 18.7072C2.48043 18.8947 2.73478 19.0001 3 19.0001H4.424C4.63173 19.6529 5.04175 20.2226 5.59472 20.627C6.1477 21.0313 6.81497 21.2492 7.5 21.2492C8.18503 21.2492 8.8523 21.0313 9.40528 20.627C9.95825 20.2226 10.3683 19.6529 10.576 19.0001H21C21.2652 19.0001 21.5196 18.8947 21.7071 18.7072C21.8946 18.5197 22 18.2653 22 18.0001C22 17.7349 21.8946 17.4805 21.7071 17.293C21.5196 17.1055 21.2652 17.0001 21 17.0001Z"
+              fill="#B8B8B8"
+            />
+          </svg>
+        </section>
+        <!-- divider -->
+        <div class="bg-zinc-300 flex min-h-[1px] mt-5 mb-8 -mx-2"></div>
+
+        <!-- search results -->
+        <header
+          class="border border-[#E5E7EB] gap-4 px-6 py-4 bg-white flex max-md:flex-col rounded-md border-solid"
+        >
+          <img
+            loading="lazy"
+            src="https://www.figma.com/file/RMGOfOCp7SjuGnXqAk45p6/image/c9f0f4edd859ad14d6974fab25dde6ce580c840b"
+            class="rounded-full object-contain object-center min-w-[87px] size-[87px] overflow-hidden self-center max-w-full"
+          />
+          <!-- details -->
+          <div class="grow max-md:flex flex-col items-center">
+            <div class="flex items-center gap-1">
+              <p
+                class="text-gray-700 text-base font-medium whitespace-nowrap my-auto"
+              >
+                Anthony H.
+              </p>
+              <svg
+                class="-mt-1"
+                width="13"
+                height="15"
+                viewBox="0 0 13 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.63444 0.82373L0.428497 3.23567V6.85359C0.428497 10.2002 3.07637 13.3297 6.63444 14.0894C10.1925 13.3297 12.8404 10.2002 12.8404 6.85359V3.23567L6.63444 0.82373ZM5.25534 10.4715L2.49714 8.05956L3.46941 7.20935L5.25534 8.76505L9.79947 4.79138L10.7717 5.64762L5.25534 10.4715Z"
+                  fill="#1D4ED8"
+                />
+              </svg>
+              <svg
+                width="99"
+                height="29"
+                viewBox="0 0 99 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  x="0.224609"
+                  width="98"
+                  height="29"
+                  fill="url(#pattern0)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_99_1117"
+                      transform="matrix(0.00869565 0 0 0.0293853 0 -0.0730135)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_99_1117"
+                    width="115"
+                    height="39"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAnCAYAAAA8XHcHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVSSURBVHhe7VpLaBtXFC1431UXWnrVXXbeaVEavHE2zUIEiwQsKIhCTYiLQYt4EeJNHCqCY0KEMTZUYIuAMAFtKkpVQVQQIqBgFJWiBAsRZOoalVQkcdr09N6ZedKM9KT51bU9vAMH+837WDpn3r33zfgjKAQGyswAQZkZICgzAwRlZoCgzAwQXJnZ/XCM397/ida7DvbfHeHl298VfZA1ZC1ZU9bWLxyZ2fnrDZpvlXknTdaYtfaKsWYe//M3Xh3/If3DiidH1py1d4uRZr758F6F0lMka88euIHUTL4rlJGnT/bAzQ6VmhnE0Freq6DclfedZbIXTjFkJidg2aInzfqTOwhFPsPEjTSKkn5ffL6JKVo7tF7S2uXHC5iILGC1JRkrZQmL/Nke6vNHMfuQxkSSyEr6/NBpUTRkpteq9cEvP+Hz3Lf45LsFjfw7X5ONHWYb2/emSQgWI46VF7IxPthtIPsojewrvX3ezGRPnMBiJp91ZIvZcf7nbXy8dV1K7pPNsbCTR5zECm+m9J871X7f6yaqh03UB0Nkh6+3Jdck17tt/fprvT3SzFHzB8ysa2OGP9NIM8W6nYHrLujkHGoxkw+vsoXGkXefzEQz7XZo9YclY0caOzSWQk70V5IUfqcx/8QscA0rN0i4W7uocrtbw9bdmB6mDYa+WkP2yBjfymCGrs08bmjtITPt5gsz72eQunWpN2biWgIrz/ufa8jMoypWlr8wrTuN8N0cih5yN3tjB4uZ/DRCttA4cjiVGWgmj5HN1dkkgeiLGrlSz51XcPOZ0d+t4GaMxL1XQF3MeZHGRRJn9vum1i4+imMiukDC6u2XrV3MRWmOCIs2ZtrOF2aSGZd3q9qOrO/nMR+na3G68QxzrGa2qX1FX3dPX7e6l8ZlWndqs2Ks65zsjR0sZno5jnB+lBloJo+RzdV4sItZEupitqa3OwXM0xe+sNH/wrlNFuUOto0wVcyS+JElbB0aazAtd3sNq9+QsIkMyty225nMcfOFmb22QSNqLFb0tsXMwxzmaI644QSLOzH6Lmv9yOOQ7I0dLGbKFrGjXzN1YeO4TXevnq8a2EqSKFESRQj8axrhnmgNrCaoP5nv71TKieVKBrcfLGHm6ximrrGoJvFtw6zN/FEF0MC6FjOfrmnhdfLLGMK0Zo8xLvQWkDKKMTe0g++d6S/MGrmPhRqiOU/q47Swpwlo7msjt36Vxl/F7EYGW6US8i3KVWy4IzMdzPdh5uxOAdulQZZQdlkMud6ZXnKmrwLIyH0z2aqxKwUpH3HOMuVJzQDarau7+s/erpUK7SbMOpgvxnBeN4Xj+o/LtA5FjKd6WxZme+lDzDloeKpqXedML9Us0+vRRMuFkQRSB5K+De4z5UUtt04jNJBPe7s7sYlcq416p4HcTgKTNM6ZmQ7mCzOjlzCzXkCRbrhiJaUVM2aDBwsgbcdH41gs1bSbtLyXwRwVTaHlnF6Fu6DratbrOZPJu4/DKedHJv8+9khiVKm948Ugn6VwgQTsFxBG1WuudAX3yWiR58jw8P0CUiysIzMdzO/t3jyy6/0jzOT1JLZNuc9qJpEfVmzMY9IYz2t/upxGvnfkcU7X50zGeX5vqR3mfRzMHc/nBxlu/s7AQwu39PQEiHFaz2YVR9Pzs1mGeiF9dujrrQlDvc88G2QPfL/PZKj/NDhdsvb/yX8aCPBdoULu/0/W3M2OFBhrpgAn4PNc5Z4XssZOix0ZHJkpwGcdPrzy0wgVgv2TNWQtWVMn50g7uDJT4WxDmRkgKDMDBGVmgKDMDBCUmQGCMjNAUGYGBsC/a5oetjnezKkAAAAASUVORK5CYII="
+                  />
+                </defs>
+              </svg>
+            </div>
+            <div class="flex items-center gap-1">
+              <p
+                class="text-gray-400 md:text-black md:text-sm text-xs leading-3 mt-1.5"
+              >
+                Frontend Developer
+              </p>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_58_1349)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 8.16027V15.619H0V0.701579H8V2.19332H1.6V14.1272H14.4V8.16027H16ZM5.6 8.39149L12.0176 2.39619L13.2608 3.91852L6.76721 10.3979H5.6V8.39149ZM4 11.8896H7.4528L15.3784 3.92L12.0608 0.380859L4 7.76197V11.8896Z"
+                    fill="#31C48D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_58_1349">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <!-- more info -->
+            <div
+              class="flex items-center max-md:flex-col gap-1 *:px-2 md:divide-x-2"
+            >
+              <div class="flex !pl-0 items-center gap-2">
+                <svg
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_99_1056)">
+                    <path
+                      d="M9.40415 17.464C4.12069 10.1873 3.13998 9.44046 3.13998 6.76615C3.13998 3.10292 6.26578 0.133301 10.1217 0.133301C13.9776 0.133301 17.1034 3.10292 17.1034 6.76615C17.1034 9.44046 16.1226 10.1873 10.8392 17.464C10.4925 17.9399 9.75084 17.9398 9.40415 17.464ZM10.1217 9.52983C11.7283 9.52983 13.0307 8.29249 13.0307 6.76615C13.0307 5.2398 11.7283 4.00246 10.1217 4.00246C8.51504 4.00246 7.21263 5.2398 7.21263 6.76615C7.21263 8.29249 8.51504 9.52983 10.1217 9.52983Z"
+                      fill="#808080"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_99_1056">
+                      <rect
+                        width="18.6178"
+                        height="17.6876"
+                        fill="white"
+                        transform="translate(0.812744 0.133301)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="text-zinc-700 text-sm leading-6">United States</p>
+              </div>
+              <div class="flex gap-2">
+                <svg
+                  width="15"
+                  height="14"
+                  viewBox="0 0 15 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.49463 0.641602C6.59619 0.438477 6.72314 0.311523 6.92627 0.235352C7.12939 0.18457 7.30713 0.18457 7.51025 0.235352C7.71338 0.311523 7.86572 0.438477 7.96729 0.641602L9.61768 3.99316L13.3247 4.52637C13.5278 4.57715 13.7056 4.67871 13.8325 4.83105C13.9595 5.00879 14.0103 5.18652 14.0103 5.38965C14.0103 5.59277 13.9341 5.77051 13.7817 5.92285L11.0903 8.53809L11.7251 12.2451C11.7505 12.4482 11.6997 12.6514 11.5981 12.8291C11.4966 13.0068 11.3442 13.1084 11.1411 13.1592C10.938 13.21 10.7349 13.1846 10.5571 13.083L7.23096 11.3564L3.90479 13.083C3.70166 13.1846 3.52393 13.21 3.3208 13.1592C3.11768 13.1084 2.93994 13.0068 2.83838 12.8291C2.73682 12.6514 2.68604 12.4482 2.73682 12.2451L3.37158 8.53809L0.680176 5.92285C0.527832 5.77051 0.42627 5.59277 0.42627 5.38965C0.42627 5.18652 0.477051 5.00879 0.604004 4.83105C0.730957 4.67871 0.908691 4.57715 1.13721 4.52637L4.84424 3.99316L6.49463 0.641602Z"
+                    fill="#6DBF51"
+                  />
+                </svg>
+                <p class="text-slate-800 text-sm font-medium leading-[18px]">
+                  4.5
+                </p>
+                <p class="text-slate-400 text-sm grow whitespace-nowrap">
+                  (450 reviews)
+                </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  width="18"
+                  height="16"
+                  viewBox="0 0 18 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.73346 0.196289C3.93751 0.196289 0.053833 3.66306 0.053833 7.93461C0.053833 12.2062 3.93751 15.6729 8.73346 15.6729C13.5381 15.6729 17.4305 12.2062 17.4305 7.93461C17.4305 3.66306 13.5381 0.196289 8.73346 0.196289ZM12.4173 12.5776L8.74215 10.6043L5.06699 12.5776L6.04008 8.85547L2.79934 6.35599L7.07399 6.03098L8.74215 2.51778L10.4103 6.02324L14.685 6.34825L11.4442 8.84773L12.4173 12.5776Z"
+                    fill="#E3A008"
+                  />
+                </svg>
+
+                <div
+                  class="text-amber-500 tracking-widest text-sm font-semibold leading-6"
+                >
+                  TOP RATED
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-1 max-md:my-3 my-0.5">
+              <button
+                role="div"
+                class="text-gray-500 text-center text-xs whitespace-nowrap bg-gray-100 px-3 py-0.5 rounded-full"
+              >
+                Tailwind CSS
+              </button>
+            </div>
+            <!-- earning info -->
+            <div
+              class="flex *:px-2 max-md:self-stretch max-md:*:basis-full max-md:border-y max-md:py-2 *:flex max-md:*:flex-col *:gap-1 md:divide-x-2"
+            >
+              <div class="text-gray-500 !pl-0 text-sm">
+                <span class="max-md:font-medium text-gray-500">Earned</span>
+                <span class="text-gray-500 md:font-semibold">$30K+</span>
+              </div>
+              <div class="text-gray-500 text-sm">
+                <span class="max-md:font-semibold text-gray-500"
+                  >Jobs Success</span
+                >
+
+                <span class="text-gray-500 md:font-semibold">100%</span>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <div
+            class="flex max-md:items-center max-md:justify-between md:flex-col gap-4 mt-4"
+          >
+            <div class="text-gray-500 text-sm">
+              <span
+                class="font-semibold text-base text-gray-500 md:text-2xl md:text-black"
+                >$100</span
+              >
+              <span class="text-gray-500">/hour</span>
+            </div>
+            <button
+              class="border border-[#E5E7EB] bg-white self-stretch py-4 md:py-2 max-md:grow px-6 rounded-md border-solid items-start"
+            >
+              <div class="text-gray-500 text-center text-sm font-semibold">
+                View Profile
+              </div>
+            </button>
+          </div>
+        </header>
+      </div>
+    </section>
+  </body>
+</html>
